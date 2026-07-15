@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Investment</title>
+</head>
+<body style="font-family:Arial;text-align:center;padding:30px;">
+
+<h1>Demo Investment Website</h1>
+
+<h2>Wallet Balance: Rs. <span id="balance">10000</span></h2>
+
+<button onclick="invest()">Invest Rs.1000</button>
+
+<script>
+let balance = 10000;
+
+function invest() {
+  if (balance >= 1000) {
+    balance -= 1000;
+    document.getElementById("balance").innerText = balance;
+    alert("Demo Investment Successful!");
+  } else {
+    alert("Balance kam hai.");
+  }
+}
+</script>
+
+</body>
+</html>
